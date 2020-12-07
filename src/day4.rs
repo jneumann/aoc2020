@@ -122,11 +122,11 @@ fn validate_pid(pid: Option<&String>) -> bool {
     }
 }
 pub fn main() {
-    println!("------------------------------------ DAY 3 ------------------------------------");
+    println!("------------------------------------ DAY 4 ------------------------------------");
 
     let input = fs::read_to_string("input/day4.txt").unwrap();
     let input_split: Vec<&str> = input
-        .split("\r\n\r\n")
+        .split("\n\n")
         .filter(|n| n != &"")
         .collect();
 
